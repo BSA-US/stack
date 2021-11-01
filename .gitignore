@@ -1,0 +1,12 @@
+node_modules
+
+.next
+.now
+
+.env
+.env.build
+.env*.local
+
+.vercel
+
+yarn-error.log
