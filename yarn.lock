@@ -734,7 +734,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@notionhq/client@^0.2.1":
+"@notionhq/client@^0.2.4":
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@notionhq/client/-/client-0.2.4.tgz#8d908a781501f4110166af05ef2da61c00782422"
   integrity sha512-omokCm0TwRH0DTCkHGCX4V4jEd7XQoMvQ9d7bcLn+mZgnTW5uU50T+vqQudr6p3y3BMeCXROI/u+JmU2RJT/AQ==
@@ -3646,7 +3646,7 @@ normalize-url@^6.0.1:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-6.1.0.tgz#40d0885b535deffe3f3147bec877d05fe4c5668a"
   integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
 
-notion-client@^4.7.3:
+notion-client@^4.10.0:
   version "4.10.0"
   resolved "https://registry.yarnpkg.com/notion-client/-/notion-client-4.10.0.tgz#bece50980f61b0f6ac2b954a58910a2068d40a58"
   integrity sha512-0XRLUrWRjz4Ope07iUFgthMeZKm4AxNF4pILIBvcsUSGfpOcdY5r6b5b1dpkYdC3eNnXknK27YTDsUo08EhOUg==
@@ -3661,7 +3661,7 @@ notion-types@^4.10.0:
   resolved "https://registry.yarnpkg.com/notion-types/-/notion-types-4.10.0.tgz#05c5006a021ab82f045c670e648a1749f2d1d9d1"
   integrity sha512-+vGbzPCdPzunn6W8U/ugKCv6dP52FXSBHlS4ZeOtm4YeHxeXtglBeUDjTSsUix8+/j+aennL/YxzeeFEB0m5pQ==
 
-notion-utils@^4.10.0, notion-utils@^4.7.3:
+notion-utils@^4.10.0:
   version "4.10.0"
   resolved "https://registry.yarnpkg.com/notion-utils/-/notion-utils-4.10.0.tgz#205049246a61c2968c8262327f9bae470b6092cd"
   integrity sha512-ZTEJbR+LDOD+VnHjTwSCHO8JB9Hu/Arf6dmBZK3IptZCfDTzoVUEoPMvuME6fkPWtijk6+Rj9sVXY09ZxmACQQ==
