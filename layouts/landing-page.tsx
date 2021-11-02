@@ -10,19 +10,17 @@ const isDevelopment = process.env.NEXT_PUBLIC_VERCEL_ENV
   ? process.env.VERCEL_ENV !== 'production'
   : false
 
-interface LandingPageProps {
+export const LandingPage: FC<{
   classNameDonate?: string
   classNameLayout?: string
   classNameMain?: string
   footer?: boolean
-}
-
-export const LandingPage: FC<LandingPageProps> = ({
+}> = ({
   classNameDonate = '',
   classNameLayout = '',
   classNameMain = '',
   children,
-  footer
+  footer,
 }) => {
   return (
     <div
@@ -41,7 +39,7 @@ export const LandingPage: FC<LandingPageProps> = ({
           <figure
             className='h-18 w-18 cursor-pointer lg:col-span-2 xl:col-span-1'
             style={{
-              background: `url('/globe-glyph-k.svg') no-repeat center center`,
+              background: `url('/stack-glyph.svg') no-repeat center center`,
               backgroundSize: 'contain',
             }}
           />
@@ -66,7 +64,7 @@ export const LandingPage: FC<LandingPageProps> = ({
         </nav>
       </header>
       <main className={`flex-grow ${classNameMain}`}>{children}</main>
-      {footer && <AppFooter className="flex-shrink-none" />}
+      {footer && <AppFooter className='flex-shrink-none' />}
     </div>
   )
 }

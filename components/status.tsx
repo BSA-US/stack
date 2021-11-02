@@ -4,21 +4,21 @@ import remark2react from 'remark-react'
 
 import { useStatus } from '~/hooks'
 
-interface StatusProps {
+export const Status: FC<{
   className?: string
-}
-
-export const Status: FC<StatusProps> = ({ className = '' }) => {
+}> = ({ className = '' }) => {
   const { status } = useStatus()
 
   return (
-    <div className={`only-child:flex-grow not-first:mt-6 flex flex-col space-y-2 lg:(flex-row items-end space-y-0 space-x-4) ${className}`}>
+    <div
+      className={`only-child:flex-grow not-first:mt-6 flex flex-col space-y-2 lg:(flex-row items-end space-y-0 space-x-4) ${className}`}
+    >
       {status?.text && (
         <span className='flex-grow'>
           {remark().use(remark2react).processSync(status.text).result as string}
         </span>
       )}
-      {(status?.actions?.[0]) && (
+      {status?.actions?.[0] && (
         <ul className='flex space-x-4'>
           {status?.actions?.map(({ text, href, target, color = 'inherit' }) => (
             <li key={text} className='whitespace-nowrap first:font-bold'>

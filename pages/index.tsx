@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Link from 'next/link'
 
 import { Status } from '~/components'
 import { useArtifacts, useStatus } from '~/hooks'
@@ -24,7 +23,8 @@ const IndexPage: NextPage = () => {
         </section>
         <section className='col-span-3 leading-5 space-y-2 lg:(col-start-3 col-span-3 text-4xl leading-8 space-y-4) xl:(col-start-2 col-span-2)'>
           <p>
-            Stack is an app for online and in-person meetings with tools for easy, democratic decision-making.
+            Stack is an app for online and in-person meetings with tools for
+            easy, democratic decision-making.
           </p>
           {status?.text && <Status />}
         </section>
@@ -38,27 +38,38 @@ const IndexPage: NextPage = () => {
           </div>
           <div className='grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 gap-8'>
             <section className='col-span-3 flex-shrink-0 lg:col-span-2 xl:col-span-1'>
-              <ul className="space-y-2">
-                {artifacts.sort((a, b) => a.order - b.order).map(({ name, url, caption }, i) => (
-                  <li className={i ? '' : 'text-3xl'} key={name}>
-                    <a className='underline' href={url}>{name}</a>
-                    {caption && <p className='text-xs'>{caption}</p>}
-                  </li>
-                ))}
+              <ul className='space-y-2'>
+                {artifacts
+                  .sort((a, b) => a.order - b.order)
+                  .map(({ name, url, caption }, i) => (
+                    <li className={i ? '' : 'text-3xl'} key={name}>
+                      <a className='underline' href={url}>
+                        {name}
+                      </a>
+                      {caption && <p className='text-xs'>{caption}</p>}
+                    </li>
+                  ))}
               </ul>
             </section>
             <section className='col-span-3 max-w-108 space-y-2 lg:(col-start-3 col-span-3 space-y-4) xl:(col-start-2 col-span-2)'>
               <h6>
                 <p className='font-bold'>Status of artifacts</p>
-                <p className='text-xs'>tl;dr: Expect tweaks, additions, and a facelift.</p>
+                <p className='text-xs'>
+                  tl;dr: Expect tweaks, additions, and a facelift.
+                </p>
               </h6>
-              <ul className="pl-6 list-disc space-y-2">
+              <ul className='pl-6 list-disc space-y-2'>
                 <li>
                   <strong className='font-bold'>Fidelity:&#32;</strong>
-                  Since Stack’s identity is in the works, the app is currently unbranded. Things won’t move around much, but they might look totally different in a month.</li>
+                  Since Stack’s identity is in the works, the app is currently
+                  unbranded. Things won’t move around much, but they might look
+                  totally different in a month.
+                </li>
                 <li>
                   <strong className='font-bold'>Coverage:&#32;</strong>
-                  All of the features the power meetings on Stack are here, but we still need to flesh out details + add some standard features (e.g. signups, invites).
+                  All of the features that power meetings on Stack are here, but
+                  we still need to flesh out details + add some standard
+                  features (e.g. signups, invites).
                 </li>
               </ul>
             </section>
