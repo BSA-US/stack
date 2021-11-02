@@ -5,6 +5,11 @@ class StackDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
+          <title>Stack</title>
+          <meta
+            name='description'
+            content='Stack is an app for online and in-person meetings with tools for easy, democratic decision-making.'
+          />
           {/* TWITTER CARD */}
           <meta name='twitter:card' content='summary' />
           <meta name='twitter:site' content='@AppForStack' />
