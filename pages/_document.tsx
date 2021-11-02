@@ -8,7 +8,7 @@ class StackDocument extends Document {
           <title>Stack</title>
           <meta
             name='description'
-            content='Stack is an app for online and in-person meetings with tools for easy, democratic decision-making.'
+            content='Online and in-person meetings with tools for easy, democratic decision-making.'
           />
           {/* TWITTER CARD */}
           <meta name='twitter:card' content='summary' />
@@ -17,7 +17,7 @@ class StackDocument extends Document {
           <meta name='twitter:title' content='The Stack App' />
           <meta
             name='twitter:description'
-            content='Stack is an app for online and in-person meetings with tools for easy, democratic decision-making.'
+            content='Online and in-person meetings with tools for easy, democratic decision-making.'
           />
           <meta
             name='twitter:image'
@@ -33,7 +33,7 @@ class StackDocument extends Document {
           <meta property='og:title' content='The Stack App' />
           <meta
             property='og:description'
-            content='Stack is an app for online and in-person meetings with tools for easy, democratic decision-making.'
+            content='Online and in-person meetings with tools for easy, democratic decision-making.'
           />
           <meta
             property='og:image'
