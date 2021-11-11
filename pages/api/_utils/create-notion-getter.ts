@@ -49,15 +49,15 @@ const hydrateNotionPage = async ({ id, properties }: any /* page */) => ({
   ...((await getFirstCodeBlock(id)) ?? {}),
 })
 
-function createNotionGetter<T>(
+export function createNotionGetter<T>(
   url: string,
   options: CreateNotionGetterOptionsDatabase
 ): () => Promise<T[]>
-function createNotionGetter<T>(
+export function createNotionGetter<T>(
   url: string,
   options: CreateNotionGetterOptionsJson
 ): () => Promise<T>
-function createNotionGetter<
+export function createNotionGetter<
   T extends Record<string, any> = Record<string, any>
 >(url: string, { type }: CreateNotionGetterOptions) {
   return {
@@ -81,5 +81,3 @@ function createNotionGetter<
       ),
   }[type]
 }
-
-export default createNotionGetter
