@@ -4,8 +4,8 @@ import { defineConfig } from 'windicss/helpers'
 export default defineConfig({
   darkMode: 'class',
   extract: {
-    include: ['**/*.{tsx,jsx,css}'],
     exclude: ['node_modules', '.git', '.next/**/*'],
+    include: ['**/*.{tsx,jsx,css}'],
   },
   plugins: [
     // https://windicss.org/plugins/community/animations.html
